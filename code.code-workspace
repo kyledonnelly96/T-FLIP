@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Default_kyledonnelly - default~iris:FLIP",
+			"uri": "isfs://default~iris:flip/?project=Default_kyledonnelly"
+		},
+		{
+			"name": "Repo",
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "InterSystems Default Dark"
+	}
+}
