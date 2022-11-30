@@ -1,6 +1,8 @@
 # T-FLIP Implementation Guide
 
-It is advised to deploy T-FLIP to a new namespace. The following production has been developed using Intersystems technology and Postgres, if an alternative DBMS is to be used then the queries will have to be updated
+It is advised to deploy T-FLIP to a new namespace. The following production has been developed using Intersystems technology and Postgres, if an alternative DBMS is to be used then the queries will have to be updated.
+
+The following steps can be followed to implement T-FLIP:
 
 1. Save XML file to trust server
 2. Open studio -> Tools -> Import Local -> Import XML file
