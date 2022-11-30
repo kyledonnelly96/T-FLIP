@@ -26,9 +26,7 @@ Method OnRequest(pRequest As Ens.Request, Output pResponse As Ens.Response) As %
 	{
 		
 		$$$TRACE("Sending FHIR to FLIP endpoint")
-		//$$$TRACE(fhir.JSONString)
-	
-		
+
 		set sc=..SendRequestSync("HTTP_SendToFlip",fhir)
 					
 	}	
@@ -320,14 +318,6 @@ Method CreateImagingBundle(obj As FLIP.Classes.Images, Output strmc As Ens.Strea
 	
 	
 	}
-	
-	
-	
-
-	
-	$$$TRACE("TEST"_bundle.%ToJSON())
-	/*set fhir=##class(FLIP.Classes.SendFHIR).%New()
-	set fhir.JSONString=bundle.%ToJSON()*/
 	
 	set strmc=##class(Ens.StreamContainer).%New()
 	set strm=##class(%Stream.GblChrCompress).%New()
