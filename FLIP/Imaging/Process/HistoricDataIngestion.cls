@@ -6,7 +6,8 @@ Method OnRequest(pInput As EnsLib.SQL.Snapshot, Output pResponse As Ens.Response
 
 	set t=$$$OK
 
-	$$$TRACE("HELLO WORLD")
+	$$$TRACE("HELLO")
+	
 
 	#DIM RS As EnsLib.SQL.Snapshot
 	Set RS = pInput

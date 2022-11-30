@@ -190,12 +190,7 @@ Method CreateImagingBundle(obj As FLIP.Classes.Images, Output strmc As Ens.Strea
 		set series.bodySite={}
 		set series.bodySite.system="https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html"
 		set series.bodySite.code=obj.bodysiteCode
-		
-		set bodySiteName=""
-		
-		&sql(SELECT CodeMeaning into :bodySiteName FROM FLIP_Tables.BodyPart WHERE CodeValue =:bodySiteCode)
-		
-		IF bodySiteName'="" set series.bodySite.display=bodySiteName
+	
 
 
 	}
@@ -352,10 +347,7 @@ Method CreateDocumentBundle(obj As FLIP.Classes.Document, Output strmc As Ens.St
 	set bundle.type="collection"
 	set bundle.entry=[]
 	
-	//PATIENT RESOURCE
-	
-	//PATIENT RESOURCE
-	
+	//PATIENT RESOURCE	
 	set pat={}
 	set pat.resource={}
 	set pat.resource.resourceType="Patient"
@@ -411,24 +403,32 @@ Method CreateDocumentBundle(obj As FLIP.Classes.Document, Output strmc As Ens.St
 	do doc.resource.identifier.%Push(identifier)
 	
 	
+	If (obj.TypeID'="") || (obj.TypeName'="")
+	{
 	set doc.resource.type={}
 	set doc.resource.type.coding=[]
 	set codingType={}
 	set codingType.system="https://aicentre.co.uk/flip/DocMan"
-	set codingType.code=obj.TypeID
-	set codingType.display=obj.TypeName
+	IF obj.TypeID'="" set codingType.code=obj.TypeID
+	IF obj.TypeName'="" set codingType.display=obj.TypeName
 	do doc.resource.type.coding.%Push(codingType)
+	}
 	
 	
 	
 	//CATEGORY
+	IF (obj.CategoryID'="") || (obj.CategoryName'="")
+	{
+	
 	set doc.resource.category={}
 	set doc.resource.category.coding=[]
 	set codingCategory={}
 	set codingCategory.system="https://aicentre.co.uk/flip/DocMan"
-	set codingCategory.code=obj.CategoryID
-	set codingCategory.display=obj.CategoryName
+	if obj.CategoryID'="" set codingCategory.code=obj.CategoryID
+	if obj.CategoryName'="" set codingCategory.display=obj.CategoryName
 	do doc.resource.category.coding.%Push(codingCategory)
+
+	}
 
 	
 	set doc.resource.subject={}
