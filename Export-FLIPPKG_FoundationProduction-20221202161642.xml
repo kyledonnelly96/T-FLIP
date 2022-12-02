@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-02 15:43:54">
-<Project name="EnsExportProduction_2022-12-02 15-42-54_594+0" LastModified="2022-12-02 15:43:54.0748159">
-  <ProjectDescription>Studio Project generated from Production 'FLIPPKG.FoundationProduction' at 2022-12-02 15:42:54.594 UTC</ProjectDescription>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-02 16:16:59">
+<Project name="EnsExportProduction_2022-12-02 16-16-41_924+0" LastModified="2022-12-02 16:16:59.0585541">
+  <ProjectDescription>Studio Project generated from Production 'FLIPPKG.FoundationProduction' at 2022-12-02 16:16:41.924 UTC</ProjectDescription>
   <Items>
-    <ProjectItem name="FLIP.Classes.AuthParameters" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Classes.Document" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Classes.Images" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Classes.Patient" type="CLS"></ProjectItem>
-    <ProjectItem name="FLIP.Classes.TokenRequest" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Documents.Process.HistoricDataIngestion" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Documents.Process.MDMProcessor" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Documents.Service.InvokeHistoricIngestion" type="CLS"></ProjectItem>
@@ -19,7 +17,7 @@
     <ProjectItem name="FLIP.Process.FHIRConvertor" type="CLS"></ProjectItem>
     <ProjectItem name="FLIPPKG.FoundationProduction" type="CLS"></ProjectItem>
     <ProjectItem name="2.4FLIP.HL7" type="HL7"></ProjectItem>
-    <ProjectItem name="EnsExportNotes.EnsExportProduction_2022-12-02 15-42-54_594+0.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="EnsExportNotes.EnsExportProduction_2022-12-02 16-16-41_924+0.PTD" type="PTD"></ProjectItem>
   </Items>
 </Project>
 
@@ -407,43 +405,6 @@
 </Value>
 <Value name="11">
 <Value>nhsOptOut</Value>
-</Value>
-</Data>
-</Storage>
-</Class>
-
-
-<Class name="FLIP.Classes.TokenRequest">
-<Super>Ens.Request,%JSON.Adaptor</Super>
-<TimeChanged>66340,31835.4920061</TimeChanged>
-<TimeCreated>66340,31835.2755006</TimeCreated>
-
-<Property name="AuthFlow">
-<Type>%String</Type>
-</Property>
-
-<Property name="ClientId">
-<Type>%String</Type>
-</Property>
-
-<Property name="AuthParameters">
-<Type>FLIP.Classes.AuthParameters</Type>
-</Property>
-
-<Storage name="Default">
-<Type>%Storage.Persistent</Type>
-<DefaultData>TokenRequestDefaultData</DefaultData>
-<Data name="TokenRequestDefaultData">
-<Structure>listnode</Structure>
-<Subscript>"TokenRequest"</Subscript>
-<Value name="1">
-<Value>AuthFlow</Value>
-</Value>
-<Value name="2">
-<Value>ClientId</Value>
-</Value>
-<Value name="3">
-<Value>AuthParameters</Value>
 </Value>
 </Data>
 </Storage>
@@ -1973,7 +1934,7 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 </Category>
 </Document>
 
-<Document name="EnsExportNotes.EnsExportProduction_2022-12-02 15-42-54_594+0.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2022-12-02 15-42-54_594+0" description="Export Notes for export EnsExportProduction_2022-12-02 15-42-54_594+0">
+<Document name="EnsExportNotes.EnsExportProduction_2022-12-02 16-16-41_924+0.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2022-12-02 16-16-41_924+0" description="Export Notes for export EnsExportProduction_2022-12-02 16-16-41_924+0">
 <![CDATA[<Deployment>
 <Creation>
 <Machine>EC2AMAZ-1HICDC0</Machine>
@@ -1981,27 +1942,26 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 <Namespace>FLIP</Namespace>
 <SourceProduction>FLIPPKG.FoundationProduction</SourceProduction>
 <Username>Administrator</Username>
-<UTC>2022-12-02 15:43:53.951</UTC>
+<UTC>2022-12-02 16:16:59.050</UTC>
 </Creation>
 <Notes>
 </Notes>
 <Contents>
-<ExportProject>EnsExportProduction_2022-12-02 15-42-54_594+0</ExportProject>
+<ExportProject>EnsExportProduction_2022-12-02 16-16-41_924+0</ExportProject>
 <Item num="1">2.4FLIP.HL7</Item>
 <Item num="2">FLIP.Classes.Document.CLS</Item>
 <Item num="3">FLIP.Classes.Images.CLS</Item>
 <Item num="4">FLIP.Classes.Patient.CLS</Item>
-<Item num="5">FLIP.Classes.TokenRequest.CLS</Item>
-<Item num="6">FLIP.Documents.Process.HistoricDataIngestion.CLS</Item>
-<Item num="7">FLIP.Documents.Process.MDMProcessor.CLS</Item>
-<Item num="8">FLIP.Documents.Service.InvokeHistoricIngestion.CLS</Item>
-<Item num="9">FLIP.Imaging.Process.HistoricDataIngestion.CLS</Item>
-<Item num="10">FLIP.Imaging.Process.RealtimeDataIngestion.CLS</Item>
-<Item num="11">FLIP.Imaging.Service.InvokeHistoricIngestion.CLS</Item>
-<Item num="12">FLIP.Operation.ExecuteQuery.CLS</Item>
-<Item num="13">FLIP.Operation.SendToFLIP.CLS</Item>
-<Item num="14">FLIP.Process.FHIRConvertor.CLS</Item>
-<Item num="15">FLIPPKG.FoundationProduction.CLS</Item>
+<Item num="5">FLIP.Documents.Process.HistoricDataIngestion.CLS</Item>
+<Item num="6">FLIP.Documents.Process.MDMProcessor.CLS</Item>
+<Item num="7">FLIP.Documents.Service.InvokeHistoricIngestion.CLS</Item>
+<Item num="8">FLIP.Imaging.Process.HistoricDataIngestion.CLS</Item>
+<Item num="9">FLIP.Imaging.Process.RealtimeDataIngestion.CLS</Item>
+<Item num="10">FLIP.Imaging.Service.InvokeHistoricIngestion.CLS</Item>
+<Item num="11">FLIP.Operation.ExecuteQuery.CLS</Item>
+<Item num="12">FLIP.Operation.SendToFLIP.CLS</Item>
+<Item num="13">FLIP.Process.FHIRConvertor.CLS</Item>
+<Item num="14">FLIPPKG.FoundationProduction.CLS</Item>
 </Contents>
 <ProductionClassInExport>FLIPPKG.FoundationProduction</ProductionClassInExport>
 </Deployment>
