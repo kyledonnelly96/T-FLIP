@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-02 15:09:19">
+<Class name="FLIPPKG.FoundationProduction">
+<ProcedureBlock>0</ProcedureBlock>
+<Super>Ens.Production</Super>
+<TimeChanged>66443,55236.7689363</TimeChanged>
+<TimeCreated>66240,34331.7753092</TimeCreated>
+
+<XData name="ProductionDefinition">
+<Data><![CDATA[
+<Production Name="FLIPPKG.FoundationProduction" TestingEnabled="true" LogGeneralTraceEvents="true">
+  <Description></Description>
+  <ActorPoolSize>1</ActorPoolSize>
+  <Item Name="FHIRProcessor" Category="" ClassName="FLIP.Process.FHIRConvertor" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  </Item>
+  <Item Name="ExecuteQuery" Category="" ClassName="FLIP.Operation.ExecuteQuery" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+    <Setting Target="Host" Name="ArchiveIO">1</Setting>
+    <Setting Target="Adapter" Name="DSN">PG</Setting>
+  </Item>
+  <Item Name="Img_ProcessHistoricData" Category="" ClassName="FLIP.Imaging.Process.HistoricDataIngestion" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  </Item>
+  <Item Name="Doc_ProcessMDM" Category="" ClassName="FLIP.Documents.Process.MDMProcessor" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  </Item>
+  <Item Name="Img_InvokeHistoricIngestion" Category="" ClassName="FLIP.Imaging.Service.InvokeHistoricIngestion" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="CallInterval">594949449</Setting>
+    <Setting Target="Adapter" Name="DSN">PG</Setting>
+    <Setting Target="Adapter" Name="Query">select MAX(imgres_rowid) as max_rowid,Count(*) numbRec_toProcess from tflip.imaging_results
+WHERE rec_process='0' AND pat_nhstracest='01'
+AND NOT (pat_nhs='' OR ires_accessionid='' OR ires_procedurecode='' OR ires_procedurename='' OR ires_modality='' OR ires_dateofstudy='')</Setting>
+    <Setting Target="Adapter" Name="KeyFieldName"></Setting>
+  </Item>
+  <Item Name="Doc_InvokeHistoricIngestion" Category="" ClassName="FLIP.Documents.Service.InvokeHistoricIngestion" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="CallInterval">10000</Setting>
+    <Setting Target="Adapter" Name="DSN">PG</Setting>
+    <Setting Target="Adapter" Name="KeyFieldName"></Setting>
+    <Setting Target="Adapter" Name="Query">select MAX(usdoc_rowid) as max_rowid,Count(*) numbRec_toProcess from tflip.usdoc_metadata
+WHERE rec_process=false
+AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' OR usdoc_contentref='')</Setting>
+  </Item>
+  <Item Name="Doc_ProcessHistoricData" Category="" ClassName="FLIP.Documents.Process.HistoricDataIngestion" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  </Item>
+  <Item Name="Img_ProcessORU" Category="" ClassName="FLIP.Imaging.Process.RealtimeDataIngestion" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  </Item>
+  <Item Name="HTTP_SendToFlip" Category="" ClassName="FLIP.Operation.SendToFLIP" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+    <Setting Target="Adapter" Name="SSLConfig"></Setting>
+    <Setting Target="Host" Name="FLIPAuthorisation">AUTHKEY</Setting>
+  </Item>
+  <Item Name="Test_HL7In" Category="" ClassName="EnsLib.HL7.Service.HTTPService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="MessageSchemaCategory">2.4FLIP</Setting>
+    <Setting Target="Host" Name="TargetConfigNames">Img_ProcessORU</Setting>
+    <Setting Target="Adapter" Name="CallInterval">500</Setting>
+  </Item>
+  <Item Name="Test_MDMIn" Category="" ClassName="EnsLib.HL7.Service.HTTPService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Host" Name="TargetConfigNames">Doc_ProcessMDM</Setting>
+    <Setting Target="Adapter" Name="Port">9985</Setting>
+    <Setting Target="Host" Name="MessageSchemaCategory">2.4</Setting>
+  </Item>
+</Production>
+]]></Data>
+</XData>
+</Class>
+</Export>
