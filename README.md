@@ -4,18 +4,22 @@ It is advised to deploy T-FLIP to a new namespace. The following production has 
 
 The following steps can be followed to implement T-FLIP:
 
-1. Save XML file to trust server
-2. Open studio -> Tools -> Import Local -> Import XML file
-3. Create new namespace:
+1. Save Production XML file to trust server
+
+2. Create new namespace:
 Open Intersystems Management portal -> System Administration -> Configuration -> System Configuration -> NameSpaces -> Create new namespace -> Enter a suitable name for the namespace 'FLIP' -> Create new database -> choose suitable directory to hold the IRIS database
 
-4. Create new production
+3. Create new production
 
-Interoperability -> Configure -> Production -> New -> Choose suitable package and production name (e.g FLIP.Production) -> Choose Generic production
+Interoperability -> Configure -> Production -> New ->  Name the production "FLIP.Production" -> Choose Generic production
 
 5. Deploy production 
 
 Interoperability -> Manage -> Deployment changes -> Deploy -> Open deployment -> find production XML file -> Select target production -> deploy
+
+6. Check to see if production components are visible 
+
+Interoperability -> 
 
 
 6. Set up OBDC connection to database if it does not already exist on the server
