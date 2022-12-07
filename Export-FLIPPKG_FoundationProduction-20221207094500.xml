@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-07 09:50:47">
-<Project name="EnsExportProduction_2022-12-07 09-44-59_810+0" LastModified="2022-12-07 09:50:47.6061561">
-  <ProjectDescription>Studio Project generated from Production 'FLIPPKG.FoundationProduction' at 2022-12-07 09:44:59.810 UTC</ProjectDescription>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-07 09:58:59">
+<Project name="EnsExportProduction_2022-12-07 09-58-46_383+0" LastModified="2022-12-07 09:58:59.5209053">
+  <ProjectDescription>Studio Project generated from Production 'FLIPPKG.FoundationProduction' at 2022-12-07 09:58:46.383 UTC</ProjectDescription>
   <Items>
     <ProjectItem name="FLIP.Classes.Document" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Classes.Images" type="CLS"></ProjectItem>
@@ -17,7 +17,7 @@
     <ProjectItem name="FLIP.Process.FHIRConvertor" type="CLS"></ProjectItem>
     <ProjectItem name="FLIPPKG.FoundationProduction" type="CLS"></ProjectItem>
     <ProjectItem name="2.4FLIP.HL7" type="HL7"></ProjectItem>
-    <ProjectItem name="EnsExportNotes.EnsExportProduction_2022-12-07 09-44-59_810+0.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="EnsExportNotes.EnsExportProduction_2022-12-07 09-58-46_383+0.PTD" type="PTD"></ProjectItem>
   </Items>
 </Project>
 
@@ -1244,7 +1244,7 @@ END
 
 <Class name="FLIP.Operation.SendToFLIP">
 <Super>Ens.BusinessOperation</Super>
-<TimeChanged>66443,57736.9658351</TimeChanged>
+<TimeChanged>66450,35864.1034147</TimeChanged>
 <TimeCreated>66385,42249.7237591</TimeCreated>
 
 <Parameter name="ADAPTER">
@@ -1267,58 +1267,6 @@ END
 <Default>FLIPAuthorisation</Default>
 </Parameter>
 
-<Method name="GetToken">
-<FormalSpec>pmsgIn:FLIP.Classes.TokenRequest,*pResponse:Ens.Response</FormalSpec>
-<ReturnType>%Status</ReturnType>
-<Implementation><![CDATA[
-	SET ts=$$$OK	
-	SET ..Adapter.URL="https://cognito-idp.eu-west-2.amazonaws.com/"
-	set strm=##class(%Stream.GlobalCharacter).%New()
-	do ##class(Ens.Util.JSON).ObjectToJSONStream(pmsgIn,.strm)
-	SET tHTTPReq=##class(%Net.HttpRequest).%New()	
-	DO tHTTPReq.SetHeader("x-amz-target","AWSCognitoIdentityProviderService.InitiateAuth")
-	DO tHTTPReq.SetHeader("Content-Type","application/x-amz-json-1.1")
-	SET tHTTPReq.EntityBody=strm	
-	
-	SET ts=..Adapter.SendFormDataArray(.tHttpResponse, "POST", tHTTPReq)
-	
-	
-	$$$TRACE(tHttpResponse)
-
-	#DIM tHttpResponse as %Net.HttpResponse
-	
-	IF $ISOBJECT(tHttpResponse)
-	{
-	
-		IF tHttpResponse.StatusCode="200"
-		{
-			
-		
-		
-		set obj={}.%FromJSON(tHttpResponse.Data)
-		set token=obj.AuthenticationResult.IdToken
-		
-		set tokenResponse=##class(FLIP.Classes.TokenResponse).%New()
-		set tokenResponse.AccessToken=token
-		set tokenResponse.StatusCode=tHttpResponse.StatusCode
-		set pResponse=tokenResponse
-		
-		//ADD ACCESS TOKEN TO GLOBAL
-		set ^tokenTS=$PIECE($HOROLOG,",",1)_$PIECE($HOROLOG,",",2)
-		set ^token=token
-		}
-		
-	}	
-	
-
-	
-	
-
-
-	quit ts
-]]></Implementation>
-</Method>
-
 <Method name="SendFHIR">
 <FormalSpec>pMsgIn:Ens.StreamContainer,*pResponse:Ens.Response</FormalSpec>
 <Implementation><![CDATA[
@@ -1326,8 +1274,7 @@ END
 	
 	set strm=pMsgIn.Stream
 	
-	/*set strm=##class(%Stream.GlobalCharacter).%New()
-	do ##class(Ens.Util.JSON).ObjectToJSONStream(pMsgIn.JSONString,.strm)*/
+
 	
 	SET tHTTPReq=##class(%Net.HttpRequest).%New()	
 	
@@ -1362,9 +1309,6 @@ END
 <XData name="MessageMap">
 <Data><![CDATA[
 <MapItems>
-<MapItem MessageType="FLIP.Classes.TokenRequest">
-<Method>GetToken</Method>
-</MapItem>
 <MapItem MessageType="Ens.StreamContainer">
 <Method>SendFHIR</Method>
 </MapItem>
@@ -1934,7 +1878,7 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 </Category>
 </Document>
 
-<Document name="EnsExportNotes.EnsExportProduction_2022-12-07 09-44-59_810+0.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2022-12-07 09-44-59_810+0" description="Export Notes for export EnsExportProduction_2022-12-07 09-44-59_810+0">
+<Document name="EnsExportNotes.EnsExportProduction_2022-12-07 09-58-46_383+0.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2022-12-07 09-58-46_383+0" description="Export Notes for export EnsExportProduction_2022-12-07 09-58-46_383+0">
 <![CDATA[<Deployment>
 <Creation>
 <Machine>EC2AMAZ-1HICDC0</Machine>
@@ -1942,12 +1886,12 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 <Namespace>FLIP</Namespace>
 <SourceProduction>FLIPPKG.FoundationProduction</SourceProduction>
 <Username>Administrator</Username>
-<UTC>2022-12-07 09:50:47.591</UTC>
+<UTC>2022-12-07 09:58:59.513</UTC>
 </Creation>
 <Notes>
 </Notes>
 <Contents>
-<ExportProject>EnsExportProduction_2022-12-07 09-44-59_810+0</ExportProject>
+<ExportProject>EnsExportProduction_2022-12-07 09-58-46_383+0</ExportProject>
 <Item num="1">2.4FLIP.HL7</Item>
 <Item num="2">FLIP.Classes.Document.CLS</Item>
 <Item num="3">FLIP.Classes.Images.CLS</Item>
