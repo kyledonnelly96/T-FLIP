@@ -1,0 +1,92 @@
+2022-12-08 09:38:42.200: Writing to Log File C:\Users\Administrator\Kyle\Repo\FLIP\logs\Deployment-Log_EC2AMAZ-1HICDC0_IRISHEALTH_FLIP_TFLIP.Production.log
+2022-12-08 09:38:42.219: Reading Deployment File C:\Users\Administrator\Kyle\Repo\TFLIP.Production.xml
+2022-12-08 09:38:42.468: Getting Document EnsExportNotes
+2022-12-08 09:38:42.584: Deployment token taken out. Token for Machine: EC2AMAZ-1HICDC0, Instance: IRISHEALTH, Namespace: FLIP
+2022-12-08 09:38:42.602: Initialized deployment token and invocation object.
+2022-12-08 09:38:42.611: Generating Contents from Deployment File
+2022-12-08 09:38:42.619: Getting Document EnsExportNotes
+2022-12-08 09:38:42.686: Found in deployment package existing 2.4FLIP.HL7
+2022-12-08 09:38:42.696: Found in deployment package new EnsExportProduction_2022-12-07 17-18-44_749+0.PRJ
+2022-12-08 09:38:42.705: Found in deployment package existing FLIP.Classes.Document.CLS
+2022-12-08 09:38:42.715: Found in deployment package existing FLIP.Classes.Images.CLS
+2022-12-08 09:38:42.726: Found in deployment package existing FLIP.Classes.Patient.CLS
+2022-12-08 09:38:42.741: Found in deployment package existing FLIP.Configuration.LUT
+2022-12-08 09:38:42.764: Found in deployment package existing FLIP.Documents.Process.HistoricDataIngestion.CLS
+2022-12-08 09:38:42.779: Found in deployment package existing FLIP.Documents.Process.MDMProcessor.CLS
+2022-12-08 09:38:42.788: Found in deployment package existing FLIP.Documents.Service.InvokeHistoricIngestion.CLS
+2022-12-08 09:38:42.796: Found in deployment package existing FLIP.Imaging.Process.HistoricDataIngestion.CLS
+2022-12-08 09:38:42.814: Found in deployment package existing FLIP.Imaging.Process.RealtimeDataIngestion.CLS
+2022-12-08 09:38:42.823: Found in deployment package existing FLIP.Imaging.Service.InvokeHistoricIngestion.CLS
+2022-12-08 09:38:42.831: Found in deployment package existing FLIP.Operation.ExecuteQuery.CLS
+2022-12-08 09:38:42.840: Found in deployment package existing FLIP.Operation.SendToFLIP.CLS
+2022-12-08 09:38:42.849: Found in deployment package existing FLIP.Process.FHIRConvertor.CLS
+2022-12-08 09:38:42.860: Found in deployment package existing FLIP.Production.CLS
+2022-12-08 09:38:42.869: Found in deployment package new FLIP.Tables.Laterality.LUT
+2022-12-08 09:38:42.879: Found in deployment package new FLIP.Tables.Modality.LUT
+2022-12-08 09:38:42.888: Found in deployment package new FLIP.Tables.SopClass.LUT
+2022-12-08 09:38:42.897: Getting Document EnsExportRemove
+2022-12-08 09:38:42.910: Locked target Production Class at the start of deployment: FLIP.Production
+2022-12-08 09:38:42.921: Creating rollback file...
+2022-12-08 09:38:42.937: Will save item 2.4FLIP.HL7
+2022-12-08 09:38:42.964: Will save item FLIP.Classes.Document.CLS
+2022-12-08 09:38:42.987: Will save item FLIP.Classes.Images.CLS
+2022-12-08 09:38:43.000: Will save item FLIP.Classes.Patient.CLS
+2022-12-08 09:38:43.014: Will save item FLIP.Configuration.LUT
+2022-12-08 09:38:43.025: Will save item FLIP.Documents.Process.HistoricDataIngestion.CLS
+2022-12-08 09:38:43.036: Will save item FLIP.Documents.Process.MDMProcessor.CLS
+2022-12-08 09:38:43.046: Will save item FLIP.Documents.Service.InvokeHistoricIngestion.CLS
+2022-12-08 09:38:43.056: Will save item FLIP.Imaging.Process.HistoricDataIngestion.CLS
+2022-12-08 09:38:43.064: Will save item FLIP.Imaging.Process.RealtimeDataIngestion.CLS
+2022-12-08 09:38:43.074: Will save item FLIP.Imaging.Service.InvokeHistoricIngestion.CLS
+2022-12-08 09:38:43.084: Will save item FLIP.Operation.ExecuteQuery.CLS
+2022-12-08 09:38:43.094: Will save item FLIP.Operation.SendToFLIP.CLS
+2022-12-08 09:38:43.105: Will save item FLIP.Process.FHIRConvertor.CLS
+2022-12-08 09:38:43.114: Will save item FLIP.Production.CLS
+2022-12-08 09:38:43.155: Exporting items to rollback file C:\Users\Administrator\Kyle\Repo\FLIP\rollbacks\Rollback_for_EC2AMAZ-1HICDC0_IRISHEALTH_FLIP_TFLIP.Production.xml
+2022-12-08 09:38:43.169: Will import existing 2.4FLIP.HL7
+2022-12-08 09:38:43.177: Will import new EnsExportNotes.EnsExportProduction_2022-12-07 17-18-44_749+0.PTD
+2022-12-08 09:38:43.186: Will import new EnsExportProduction_2022-12-07 17-18-44_749+0.PRJ
+2022-12-08 09:38:43.194: Will import existing FLIP.Classes.Document.CLS
+2022-12-08 09:38:43.207: Will import existing FLIP.Classes.Images.CLS
+2022-12-08 09:38:43.215: Will import existing FLIP.Classes.Patient.CLS
+2022-12-08 09:38:43.224: Will import existing FLIP.Configuration.LUT
+2022-12-08 09:38:43.232: Will import existing FLIP.Documents.Process.HistoricDataIngestion.CLS
+2022-12-08 09:38:43.240: Will import existing FLIP.Documents.Process.MDMProcessor.CLS
+2022-12-08 09:38:43.256: Will import existing FLIP.Documents.Service.InvokeHistoricIngestion.CLS
+2022-12-08 09:38:43.267: Will import existing FLIP.Imaging.Process.HistoricDataIngestion.CLS
+2022-12-08 09:38:43.278: Will import existing FLIP.Imaging.Process.RealtimeDataIngestion.CLS
+2022-12-08 09:38:43.288: Will import existing FLIP.Imaging.Service.InvokeHistoricIngestion.CLS
+2022-12-08 09:38:43.297: Will import existing FLIP.Operation.ExecuteQuery.CLS
+2022-12-08 09:38:43.307: Will import existing FLIP.Operation.SendToFLIP.CLS
+2022-12-08 09:38:43.316: Will import existing FLIP.Process.FHIRConvertor.CLS
+2022-12-08 09:38:43.325: Will import existing FLIP.Production.CLS
+2022-12-08 09:38:43.334: Will import new FLIP.Tables.Laterality.LUT
+2022-12-08 09:38:43.343: Will import new FLIP.Tables.Modality.LUT
+2022-12-08 09:38:43.352: Will import new FLIP.Tables.SopClass.LUT
+2022-12-08 09:38:43.365: Checking if UpdateProduction needs to be called before starting deployment.
+2022-12-08 09:38:43.374: Production does not need updating
+2022-12-08 09:38:43.383: Applying deployment file...
+2022-12-08 09:38:47.781: Successfully imported 2.4FLIP.hl7
+2022-12-08 09:38:47.789: Successfully imported EnsExportNotes.EnsExportProduction_2022-12-07 17-18-44_749+0.ptd
+2022-12-08 09:38:47.797: Successfully imported FLIP.Classes.Document.cls
+2022-12-08 09:38:47.805: Successfully imported FLIP.Classes.Images.cls
+2022-12-08 09:38:47.812: Successfully imported FLIP.Classes.Patient.cls
+2022-12-08 09:38:47.820: Successfully imported FLIP.Configuration.lut
+2022-12-08 09:38:47.827: Successfully imported FLIP.Documents.Process.HistoricDataIngestion.cls
+2022-12-08 09:38:47.835: Successfully imported FLIP.Documents.Process.MDMProcessor.cls
+2022-12-08 09:38:47.843: Successfully imported FLIP.Documents.Service.InvokeHistoricIngestion.cls
+2022-12-08 09:38:47.851: Successfully imported FLIP.Imaging.Process.HistoricDataIngestion.cls
+2022-12-08 09:38:47.860: Successfully imported FLIP.Imaging.Process.RealtimeDataIngestion.cls
+2022-12-08 09:38:47.867: Successfully imported FLIP.Imaging.Service.InvokeHistoricIngestion.cls
+2022-12-08 09:38:47.876: Successfully imported FLIP.Operation.ExecuteQuery.cls
+2022-12-08 09:38:47.884: Successfully imported FLIP.Operation.SendToFLIP.cls
+2022-12-08 09:38:47.891: Successfully imported FLIP.Process.FHIRConvertor.cls
+2022-12-08 09:38:47.899: Successfully imported FLIP.Production.cls
+2022-12-08 09:38:47.906: Successfully imported FLIP.Tables.Laterality.lut
+2022-12-08 09:38:47.913: Successfully imported FLIP.Tables.Modality.lut
+2022-12-08 09:38:47.921: Successfully imported FLIP.Tables.SopClass.lut
+2022-12-08 09:38:47.928: Saving host item changes to production class definition.Production Configuration screens open in the portal will need refreshing.
+2022-12-08 09:38:47.955: Production does not need updating
+2022-12-08 09:38:47.965: Unlocked target Production Class at the end of deployment: FLIP.Production
+2022-12-08 09:38:47.973: Finished Deploying successfully
+2022-12-08 09:38:47.983: Closed deployment token and deployment invocation object.
