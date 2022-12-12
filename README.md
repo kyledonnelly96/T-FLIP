@@ -9,7 +9,7 @@ The following steps can be followed to implement T-FLIP:
 2. Create new namespace:
 Open Intersystems Management portal -> System Administration -> Configuration -> System Configuration -> NameSpaces -> Create new namespace -> Enter a suitable name for the namespace 'FLIP' -> Create new database -> choose suitable directory to hold the IRIS database
 
-More details can found here: https://docs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=EESB_CONFIGURE_SYSTEM#:~:text=Select%20System%20Administration%20%3E%20Configuration%20%3E%20System,button%20for%20the%20globals%20database.
+More details can found here: https://docs.intersystems.com/iris20222/csp/docbook/Doc.View.cls?KEY=GORIENT_ch_enviro
 
 3. Deploy production 
 
