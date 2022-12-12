@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-07 17:19:23">
-<Project name="EnsExportProduction_2022-12-07 17-18-44_749+0" LastModified="2022-12-07 17:19:23.0206324">
-  <ProjectDescription>Studio Project generated from Production 'FLIP.Production' at 2022-12-07 17:18:44.749 UTC</ProjectDescription>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1 (Build 209U)" ts="2022-12-12 09:57:57">
+<Project name="EnsExportProduction_2022-12-12 09-57-19_491+0" LastModified="2022-12-12 09:57:57.3167988">
+  <ProjectDescription>Studio Project generated from Production 'FLIP.Production' at 2022-12-12 09:57:19.491 UTC</ProjectDescription>
   <Items>
     <ProjectItem name="FLIP.Classes.Document" type="CLS"></ProjectItem>
     <ProjectItem name="FLIP.Classes.Images" type="CLS"></ProjectItem>
@@ -21,7 +21,7 @@
     <ProjectItem name="FLIP.Tables.Laterality.LUT" type="LUT"></ProjectItem>
     <ProjectItem name="FLIP.Tables.Modality.LUT" type="LUT"></ProjectItem>
     <ProjectItem name="FLIP.Tables.SopClass.LUT" type="LUT"></ProjectItem>
-    <ProjectItem name="EnsExportNotes.EnsExportProduction_2022-12-07 17-18-44_749+0.PTD" type="PTD"></ProjectItem>
+    <ProjectItem name="EnsExportNotes.EnsExportProduction_2022-12-12 09-57-19_491+0.PTD" type="PTD"></ProjectItem>
   </Items>
 </Project>
 
@@ -1810,7 +1810,7 @@ END
 <Class name="FLIP.Production">
 <ProcedureBlock>0</ProcedureBlock>
 <Super>Ens.Production</Super>
-<TimeChanged>66450,51258.5993516</TimeChanged>
+<TimeChanged>66450,62782.1065766</TimeChanged>
 <TimeCreated>66450,37612.2040083</TimeCreated>
 
 <XData name="ProductionDefinition">
@@ -1884,7 +1884,7 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 </Category>
 </Document>
 
-<Document name="EnsExportNotes.EnsExportProduction_2022-12-07 17-18-44_749+0.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2022-12-07 17-18-44_749+0" description="Export Notes for export EnsExportProduction_2022-12-07 17-18-44_749+0">
+<Document name="EnsExportNotes.EnsExportProduction_2022-12-12 09-57-19_491+0.PTD"><ProjectTextDocument name="EnsExportNotes.EnsExportProduction_2022-12-12 09-57-19_491+0" description="Export Notes for export EnsExportProduction_2022-12-12 09-57-19_491+0">
 <![CDATA[<Deployment>
 <Creation>
 <Machine>ANS-A538</Machine>
@@ -1892,12 +1892,12 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 <Namespace>FLIP</Namespace>
 <SourceProduction>FLIP.Production</SourceProduction>
 <Username>KyleDonnelly</Username>
-<UTC>2022-12-07 17:19:23.005</UTC>
+<UTC>2022-12-12 09:57:57.313</UTC>
 </Creation>
 <Notes>
 </Notes>
 <Contents>
-<ExportProject>EnsExportProduction_2022-12-07 17-18-44_749+0</ExportProject>
+<ExportProject>EnsExportProduction_2022-12-12 09-57-19_491+0</ExportProject>
 <Item num="1">2.4FLIP.HL7</Item>
 <Item num="2">FLIP.Classes.Document.CLS</Item>
 <Item num="3">FLIP.Classes.Images.CLS</Item>
@@ -2037,115 +2037,115 @@ AND NOT (pat_dob='' OR pat_nhs='' OR usdoc_documentdate='' OR usdoc_uniqueid='' 
 
 <Document name="FLIP.Tables.SopClass.LUT">
 <lookupTable>
-<entry table="FLIP.Tables.SopClass" key="12-lead ECG Waveform Storage">1.2.840.10008.5.1.4.1.1.9.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Ambulatory ECG Waveform Storage">1.2.840.10008.5.1.4.1.1.9.1.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Arterial Pulse Waveform Storage">1.2.840.10008.5.1.4.1.1.9.5.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Autorefraction Measurements Storage">1.2.840.10008.5.1.4.1.1.78.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Basic Structured Display Storage">1.2.840.10008.5.1.4.1.1.131</entry>
-<entry table="FLIP.Tables.SopClass" key="Basic Text SR">1.2.840.10008.5.1.4.1.1.88.11</entry>
-<entry table="FLIP.Tables.SopClass" key="Basic Voice Audio Waveform Storage">1.2.840.10008.5.1.4.1.1.9.4.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Blending Softcopy Presentation State Storage">1.2.840.10008.5.1.4.1.1.11.4</entry>
-<entry table="FLIP.Tables.SopClass" key="Breast Tomosynthesis Image Storage">1.2.840.10008.5.1.4.1.1.13.1.3</entry>
-<entry table="FLIP.Tables.SopClass" key="CT Image Storage">1.2.840.10008.5.1.4.1.1.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Cardiac Electrophysiology Waveform Storage">1.2.840.10008.5.1.4.1.1.9.3.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Chest CAD SR">1.2.840.10008.5.1.4.1.1.88.65</entry>
-<entry table="FLIP.Tables.SopClass" key="Colon CAD SR">1.2.840.10008.5.1.4.1.1.88.69</entry>
-<entry table="FLIP.Tables.SopClass" key="Color Softcopy Presentation State Storage">1.2.840.10008.5.1.4.1.1.11.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Comprehensive 3D SR">1.2.840.10008.5.1.4.1.1.88.34</entry>
-<entry table="FLIP.Tables.SopClass" key="Comprehensive SR">1.2.840.10008.5.1.4.1.1.88.33</entry>
-<entry table="FLIP.Tables.SopClass" key="Computed Radiography Image Storage">1.2.840.10008.5.1.4.1.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Corneal Topography Map Storage">1.2.840.10008.5.1.4.1.1.82.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Deformable Spatial Registration Storage">1.2.840.10008.5.1.4.1.1.66.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Digital Intra-Oral X-Ray Image Storage - For Presentation">1.2.840.10008.5.1.4.1.1.1.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Digital Intra-Oral X-Ray Image Storage - For Processing">1.2.840.10008.5.1.4.1.1.1.3.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Digital Mammography X-Ray Image Storage - For Presentation">1.2.840.10008.5.1.4.1.1.1.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Digital Mammography X-Ray Image Storage - For Processing">1.2.840.10008.5.1.4.1.1.1.2.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Digital X-Ray Image Storage - For Presentation">1.2.840.10008.5.1.4.1.1.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Digital X-Ray Image Storage - For Processing">1.2.840.10008.5.1.4.1.1.1.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Encapsulated CDA Storage">1.2.840.10008.5.1.4.1.1.104.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Encapsulated PDF Storage">1.2.840.10008.5.1.4.1.1.104.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced CT Image Storage">1.2.840.10008.5.1.4.1.1.2.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced MR Color Image Storage">1.2.840.10008.5.1.4.1.1.4.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced MR Image Storage">1.2.840.10008.5.1.4.1.1.4.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced PET Image Storage">1.2.840.10008.5.1.4.1.1.130</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced SR">1.2.840.10008.5.1.4.1.1.88.22</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced US Volume Storage">1.2.840.10008.5.1.4.1.1.6.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced XA Image Storage">1.2.840.10008.5.1.4.1.1.12.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Enhanced XRF Image Storage">1.2.840.10008.5.1.4.1.1.12.2.1</entry>
-<entry table="FLIP.Tables.SopClass" key="General Audio Waveform Storage">1.2.840.10008.5.1.4.1.1.9.4.2</entry>
-<entry table="FLIP.Tables.SopClass" key="General ECG Waveform Storage">1.2.840.10008.5.1.4.1.1.9.1.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Generic Implant Template Storage">1.2.840.10008.5.1.4.43.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Grayscale Softcopy Presentation State Storage">1.2.840.10008.5.1.4.1.1.11.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Hemodynamic Waveform Storage">1.2.840.10008.5.1.4.1.1.9.2.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Implant Assembly Template Storage">1.2.840.10008.5.1.4.44.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Implant Template Group Storage">1.2.840.10008.5.1.4.45.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Implantation Plan SR Document Storage">1.2.840.10008.5.1.4.1.1.88.70</entry>
-<entry table="FLIP.Tables.SopClass" key="Intraocular Lens Calculations Storage">1.2.840.10008.5.1.4.1.1.78.8</entry>
-<entry table="FLIP.Tables.SopClass" key="Intravascular Optical Coherence Tomography Image Storage - For Presentation">1.2.840.10008.5.1.4.1.1.14.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Intravascular Optical Coherence Tomography Image Storage - For Processing">1.2.840.10008.5.1.4.1.1.14.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Keratometry Measurements Storage">1.2.840.10008.5.1.4.1.1.78.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Key Object Selection">1.2.840.10008.5.1.4.1.1.88.59</entry>
-<entry table="FLIP.Tables.SopClass" key="Legacy Converted Enhanced CT Image Storage">1.2.840.10008.5.1.4.1.1.2.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Legacy Converted Enhanced MR Image Storage">1.2.840.10008.5.1.4.1.1.4.4</entry>
-<entry table="FLIP.Tables.SopClass" key="Legacy Converted Enhanced PET Image Storage">1.2.840.10008.5.1.4.1.1.128.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Lensometry Measurements Storage">1.2.840.10008.5.1.4.1.1.78.1</entry>
-<entry table="FLIP.Tables.SopClass" key="MR Image Storage">1.2.840.10008.5.1.4.1.1.4</entry>
-<entry table="FLIP.Tables.SopClass" key="MR Spectroscopy Storage">1.2.840.10008.5.1.4.1.1.4.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Macular Grid Thickness and Volume Report">1.2.840.10008.5.1.4.1.1.79.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Mammography CAD SR">1.2.840.10008.5.1.4.1.1.88.50</entry>
-<entry table="FLIP.Tables.SopClass" key="Multi-frame Grayscale Byte Secondary Capture Image Storage">1.2.840.10008.5.1.4.1.1.7.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Multi-frame Grayscale Word Secondary Capture Image Storage">1.2.840.10008.5.1.4.1.1.7.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Multi-frame Single Bit Secondary Capture Image Storage">1.2.840.10008.5.1.4.1.1.7.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Multi-frame True Color Secondary Capture Image Storage">1.2.840.10008.5.1.4.1.1.7.4</entry>
-<entry table="FLIP.Tables.SopClass" key="Nuclear Medicine Image Storage">1.2.840.10008.5.1.4.1.1.20</entry>
-<entry table="FLIP.Tables.SopClass" key="Ophthalmic Axial Measurements Storage">1.2.840.10008.5.1.4.1.1.78.7</entry>
-<entry table="FLIP.Tables.SopClass" key="Ophthalmic Photography 16 Bit Image Storage">1.2.840.10008.5.1.4.1.1.77.1.5.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Ophthalmic Photography 8 Bit Image Storage">1.2.840.10008.5.1.4.1.1.77.1.5.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Ophthalmic Thickness Map Storage">1.2.840.10008.5.1.4.1.1.81.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Ophthalmic Tomography Image Storage">1.2.840.10008.5.1.4.1.1.77.1.5.4</entry>
-<entry table="FLIP.Tables.SopClass" key="Ophthalmic Visual Field Static Perimetry Measurements Storage">1.2.840.10008.5.1.4.1.1.80.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Positron Emission Tomography Image Storage">1.2.840.10008.5.1.4.1.1.128</entry>
-<entry table="FLIP.Tables.SopClass" key="Procedure Log">1.2.840.10008.5.1.4.1.1.88.40</entry>
-<entry table="FLIP.Tables.SopClass" key="Pseudo-Color Softcopy Presentation State Storage">1.2.840.10008.5.1.4.1.1.11.3</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Beams Delivery Instruction Storage">1.2.840.10008.5.1.4.34.7</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Beams Treatment Record Storage">1.2.840.10008.5.1.4.1.1.481.4</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Brachy Treatment Record Storage">1.2.840.10008.5.1.4.1.1.481.6</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Dose Storage">1.2.840.10008.5.1.4.1.1.481.2</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Image Storage">1.2.840.10008.5.1.4.1.1.481.1</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Ion Beams Treatment Record Storage">1.2.840.10008.5.1.4.1.1.481.9</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Ion Plan Storage">1.2.840.10008.5.1.4.1.1.481.8</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Plan Storage">1.2.840.10008.5.1.4.1.1.481.5</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Structure Set Storage">1.2.840.10008.5.1.4.1.1.481.3</entry>
-<entry table="FLIP.Tables.SopClass" key="RT Treatment Summary Record Storage">1.2.840.10008.5.1.4.1.1.481.7</entry>
-<entry table="FLIP.Tables.SopClass" key="Raw Data Storage">1.2.840.10008.5.1.4.1.1.66</entry>
-<entry table="FLIP.Tables.SopClass" key="Real World Value Mapping Storage">1.2.840.10008.5.1.4.1.1.67</entry>
-<entry table="FLIP.Tables.SopClass" key="Respiratory Waveform Storage">1.2.840.10008.5.1.4.1.1.9.6.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Secondary Capture Image Storage">1.2.840.10008.5.1.4.1.1.7</entry>
-<entry table="FLIP.Tables.SopClass" key="Segmentation Storage">1.2.840.10008.5.1.4.1.1.66.4</entry>
-<entry table="FLIP.Tables.SopClass" key="Spatial Fiducials Storage">1.2.840.10008.5.1.4.1.1.66.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Spatial Registration Storage">1.2.840.10008.5.1.4.1.1.66.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Spectacle Prescription Report Storage">1.2.840.10008.5.1.4.1.1.78.6</entry>
-<entry table="FLIP.Tables.SopClass" key="Stereometric Relationship Storage">1.2.840.10008.5.1.4.1.1.77.1.5.3</entry>
-<entry table="FLIP.Tables.SopClass" key="Subjective Refraction Measurements Storage">1.2.840.10008.5.1.4.1.1.78.4</entry>
-<entry table="FLIP.Tables.SopClass" key="Surface Scan Mesh Storage">1.2.840.10008.5.1.4.1.1.68.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Surface Scan Point Cloud Storage">1.2.840.10008.5.1.4.1.1.68.2</entry>
-<entry table="FLIP.Tables.SopClass" key="Surface Segmentation Storage">1.2.840.10008.5.1.4.1.1.66.5</entry>
-<entry table="FLIP.Tables.SopClass" key="Ultrasound Image Storage">1.2.840.10008.5.1.4.1.1.6.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Ultrasound Multi-frame Image Storage">1.2.840.10008.5.1.4.1.1.3.1</entry>
-<entry table="FLIP.Tables.SopClass" key="VL Endoscopic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="VL Microscopic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.2</entry>
-<entry table="FLIP.Tables.SopClass" key="VL Photographic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.4</entry>
-<entry table="FLIP.Tables.SopClass" key="VL Slide-Coordinates Microscopic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.3</entry>
-<entry table="FLIP.Tables.SopClass" key="VL Whole Slide Microscopy Image Storage">1.2.840.10008.5.1.4.1.1.77.1.6</entry>
-<entry table="FLIP.Tables.SopClass" key="Video Endoscopic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Video Microscopic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.2.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Video Photographic Image Storage">1.2.840.10008.5.1.4.1.1.77.1.4.1</entry>
-<entry table="FLIP.Tables.SopClass" key="Visual Acuity Measurements Storage">1.2.840.10008.5.1.4.1.1.78.5</entry>
-<entry table="FLIP.Tables.SopClass" key="X-Ray 3D Angiographic Image Storage">1.2.840.10008.5.1.4.1.1.13.1.1</entry>
-<entry table="FLIP.Tables.SopClass" key="X-Ray 3D Craniofacial Image Storage">1.2.840.10008.5.1.4.1.1.13.1.2</entry>
-<entry table="FLIP.Tables.SopClass" key="X-Ray Angiographic Image Storage">1.2.840.10008.5.1.4.1.1.12.1</entry>
-<entry table="FLIP.Tables.SopClass" key="X-Ray Radiation Dose SR">1.2.840.10008.5.1.4.1.1.88.67</entry>
-<entry table="FLIP.Tables.SopClass" key="X-Ray Radiofluoroscopic Image Storage">1.2.840.10008.5.1.4.1.1.12.2</entry>
-<entry table="FLIP.Tables.SopClass" key="XA/XRF Grayscale Softcopy Presentation State Storage">1.2.840.10008.5.1.4.1.1.11.5</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1">Computed Radiography Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1.1">Digital X-Ray Image Storage - For Presentation</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1.1.1">Digital X-Ray Image Storage - For Processing</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1.2">Digital Mammography X-Ray Image Storage - For Presentation</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1.2.1">Digital Mammography X-Ray Image Storage - For Processing</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1.3">Digital Intra-Oral X-Ray Image Storage - For Presentation</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.1.3.1">Digital Intra-Oral X-Ray Image Storage - For Processing</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.104.1">Encapsulated PDF Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.104.2">Encapsulated CDA Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.11.1">Grayscale Softcopy Presentation State Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.11.2">Color Softcopy Presentation State Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.11.3">Pseudo-Color Softcopy Presentation State Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.11.4">Blending Softcopy Presentation State Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.11.5">XA/XRF Grayscale Softcopy Presentation State Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.12.1">X-Ray Angiographic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.12.1.1">Enhanced XA Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.12.2">X-Ray Radiofluoroscopic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.12.2.1">Enhanced XRF Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.128">Positron Emission Tomography Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.128.1">Legacy Converted Enhanced PET Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.13.1.1">X-Ray 3D Angiographic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.13.1.2">X-Ray 3D Craniofacial Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.13.1.3">Breast Tomosynthesis Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.130">Enhanced PET Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.131">Basic Structured Display Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.14.1">Intravascular Optical Coherence Tomography Image Storage - For Presentation</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.14.2">Intravascular Optical Coherence Tomography Image Storage - For Processing</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.2">CT Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.2.1">Enhanced CT Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.2.2">Legacy Converted Enhanced CT Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.20">Nuclear Medicine Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.3.1">Ultrasound Multi-frame Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.4">MR Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.4.1">Enhanced MR Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.4.2">MR Spectroscopy Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.4.3">Enhanced MR Color Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.4.4">Legacy Converted Enhanced MR Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.1">RT Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.2">RT Dose Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.3">RT Structure Set Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.4">RT Beams Treatment Record Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.5">RT Plan Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.6">RT Brachy Treatment Record Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.7">RT Treatment Summary Record Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.8">RT Ion Plan Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.481.9">RT Ion Beams Treatment Record Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.6.1">Ultrasound Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.6.2">Enhanced US Volume Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.66">Raw Data Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.66.1">Spatial Registration Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.66.2">Spatial Fiducials Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.66.3">Deformable Spatial Registration Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.66.4">Segmentation Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.66.5">Surface Segmentation Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.67">Real World Value Mapping Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.68.1">Surface Scan Mesh Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.68.2">Surface Scan Point Cloud Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.7">Secondary Capture Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.7.1">Multi-frame Single Bit Secondary Capture Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.7.2">Multi-frame Grayscale Byte Secondary Capture Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.7.3">Multi-frame Grayscale Word Secondary Capture Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.7.4">Multi-frame True Color Secondary Capture Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.1">VL Endoscopic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.1.1">Video Endoscopic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.2">VL Microscopic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.2.1">Video Microscopic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.3">VL Slide-Coordinates Microscopic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.4">VL Photographic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.4.1">Video Photographic Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.5.1">Ophthalmic Photography 8 Bit Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.5.2">Ophthalmic Photography 16 Bit Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.5.3">Stereometric Relationship Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.5.4">Ophthalmic Tomography Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.77.1.6">VL Whole Slide Microscopy Image Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.1">Lensometry Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.2">Autorefraction Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.3">Keratometry Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.4">Subjective Refraction Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.5">Visual Acuity Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.6">Spectacle Prescription Report Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.7">Ophthalmic Axial Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.78.8">Intraocular Lens Calculations Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.79.1">Macular Grid Thickness and Volume Report</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.80.1">Ophthalmic Visual Field Static Perimetry Measurements Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.81.1">Ophthalmic Thickness Map Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.82.1">Corneal Topography Map Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.11">Basic Text SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.22">Enhanced SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.33">Comprehensive SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.34">Comprehensive 3D SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.40">Procedure Log</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.50">Mammography CAD SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.59">Key Object Selection</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.65">Chest CAD SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.67">X-Ray Radiation Dose SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.69">Colon CAD SR</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.88.70">Implantation Plan SR Document Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.1.1">12-lead ECG Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.1.2">General ECG Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.1.3">Ambulatory ECG Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.2.1">Hemodynamic Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.3.1">Cardiac Electrophysiology Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.4.1">Basic Voice Audio Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.4.2">General Audio Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.5.1">Arterial Pulse Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.1.1.9.6.1">Respiratory Waveform Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.34.7">RT Beams Delivery Instruction Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.43.1">Generic Implant Template Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.44.1">Implant Assembly Template Storage</entry>
+<entry table="FLIP.Tables.SopClass" key="1.2.840.10008.5.1.4.45.1">Implant Template Group Storage</entry>
 </lookupTable>
 </Document></Export>
